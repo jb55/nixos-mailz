@@ -56,7 +56,8 @@ For each line you'll enter, the encrypted equivalent will be printed.
 
 ### Manual actions
 
-1. run sa-update
-2. add /var/lib/dkim/\*/default.txt TXT records to your domain for DKIM
-3. Open ports 587 and 993 (I removed these here because I run them on a VPN)
+1. run `sa-update`
+2. add `/var/lib/dkim/*/default.txt` TXT records to your domain for DKIM
+3. open ports `587` and `993` (I removed these here because I run them on a VPN)
+4. apply `opensmtpd-service.diff` to your `nixpkgs` if needed
 
