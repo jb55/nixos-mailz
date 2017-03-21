@@ -268,22 +268,6 @@ in
               auto = subscribe
               special_use = \Archive
           }
-
-          ${mailbox "Alerts"}
-          ${mailbox "GitHub"}
-          ${mailbox "Lists.ats"}
-          ${mailbox "Lists.icn"}
-          ${mailbox "Lists.craigslist"}
-          ${mailbox "Lists.bitcoin"}
-          ${mailbox "Lists.elm"}
-          ${mailbox "Lists.haskell"}
-          ${mailbox "Lists.nix"}
-          ${mailbox "Lists.nixpkgs"}
-          ${mailbox "Lists.shen"}
-          ${mailbox "Lists.spacemacs"}
-          ${mailbox "Monstercat"}
-          ${mailbox "Updates"}
-
         }
 
         protocol lmtp {
