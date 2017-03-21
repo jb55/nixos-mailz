@@ -1,0 +1,15 @@
+diff --git a/nixos/modules/services/mail/opensmtpd.nix b/nixos/modules/services/mail/opensmtpd.nix
+index 53acdba424..cbdd6cef75 100644
+--- a/nixos/modules/services/mail/opensmtpd.nix
++++ b/nixos/modules/services/mail/opensmtpd.nix
+@@ -108,8 +108,8 @@ in {
+         chmod 711 /var/spool/smtpd
+ 
+         mkdir -p /var/spool/smtpd/offline
+-        chown root.smtpq /var/spool/smtpd/offline
+-        chmod 770 /var/spool/smtpd/offline
++        chown root.root /var/spool/smtpd/offline
++        chmod 1777 /var/spool/smtpd/offline
+ 
+         mkdir -p /var/spool/smtpd/purge
+         chown smtpq.root /var/spool/smtpd/purge
